@@ -23,7 +23,8 @@ function Header() {
     <div className="headerParentDiv">
       <div className="headerChildDiv">
         <div className="brandName">
-          <OlxLogo></OlxLogo>
+          {/* <OlxLogo></OlxLogo> */}
+          Cookie
         </div>
         <div className="placeSearch">
           <Search></Search>
@@ -42,8 +43,14 @@ function Header() {
           </div>
         </div>
         <div className="language">
-          <span> ENGLISH </span>
-          <Arrow></Arrow>
+          <select>
+            <option>English</option>
+            <option>Spanish</option>
+            <option>Italic</option>
+            <option>Chinese</option>
+          </select>
+          {/* <span> ENGLISH </span> */}
+          {/* <Arrow></Arrow> */}
         </div>
         <div className="loginPage">
           <span>{user ? `Hey..welcome ${user.displayName}` : <span onClick={()=>{ history.push("login")}}>Login</span>}</span>
@@ -54,13 +61,13 @@ function Header() {
             history.push('/login')
           }}>Logout</span>}
 
-        <div className="sellMenu" onClick={goToSell}>
+        {/* <div className="sellMenu" onClick={goToSell}>
           <SellButton></SellButton>
           <div className="sellMenuContent">
             <SellButtonPlus></SellButtonPlus>
             <span>SELL</span>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

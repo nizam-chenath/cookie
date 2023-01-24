@@ -1,7 +1,7 @@
 .moreView {
   margin: 16px 16px 24px;
   padding: 16px 16px 32px;
-  background-color: #ebeeef;
+  background: #dde1e7;
   border-radius: 4px;
 }
 
@@ -27,18 +27,41 @@
 
 .moreView .cards {
   white-space: nowrap;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-content: center;
+  gap: 20px;
+  /* overflow-x: scroll;
+  overflow-y: hidden; */
 }
 
 .card {
   margin-right: 15px;
   padding: 13px;
-  max-width: 222px;
   width: 222px;
   height: 270px;
   display: inline-block;
   cursor: pointer;
+  width: 100%;
+  background: #dde1e7;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+}
+.card:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transition: 1.3s;
+  -webkit-transition: 1.3s;
+  -moz-transition: 1.3s;
+  -ms-transition: 1.3s;
+  -o-transition: 1.3s;
 }
 
 .card .favorite {
