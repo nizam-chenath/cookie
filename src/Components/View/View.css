@@ -5,6 +5,9 @@
 .viewParentDiv .imageShowDiv {
   padding: 16px;
   width: 70vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .viewParentDiv .imageShowDiv img {
   width: 65vw;
@@ -14,7 +17,7 @@
 .viewParentDiv .rightSection {
   padding: 16px;
   margin-top: 3em;
-  width: 30vw;
+  width: 50vw;
 }
 
 .viewParentDiv .rightSection .productDetails :first-child {
@@ -27,17 +30,24 @@
 }
 
 .viewParentDiv .rightSection .productDetails {
-  border: 1px solid black;
-  padding: 6px;
-  border-radius: 6px;
+  
+  padding: 20px;
+  
   margin-bottom: 2em;
   width: 100%;
+  border-radius: 18px;
+background: #e0e0e0;
+box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
 }
 
 .viewParentDiv .rightSection .contactDetails {
-  border: 1px solid black;
-  padding: 6px;
-  border-radius: 6px;
+ 
+  padding: 20px;
+  border-radius: 18px;
+background: #e0e0e0;
+box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
 }
 
 .viewParentDiv .rightSection .contactDetails :first-child {
@@ -52,11 +62,11 @@
   width: 200px;
   height: 40px;
   border: none;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
   background: green;
 }
 .call-link{

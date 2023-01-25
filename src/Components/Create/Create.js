@@ -46,7 +46,7 @@ const Create = () => {
             <label htmlFor="fname">Name</label>
             <br />
             <input
-              className="input"
+              className="input1"
               type="text"
               id="fname"
               name="Name"
@@ -58,7 +58,7 @@ const Create = () => {
             <label htmlFor="fname">Category</label>
             <br />
             <input
-              className="input"
+              className="input1"
               type="text"
               id="fname"
               name="category"
@@ -69,7 +69,7 @@ const Create = () => {
             <br />
             <label htmlFor="fname">Price</label>
             <br />
-            <input className="input" type="number" id="fname" name="Price" value={price} onChange={(e)=> setPrice(e.target.value)} />
+            <input className="input1" type="number" id="fname" name="Price" value={price} onChange={(e)=> setPrice(e.target.value)} />
             <br />
         
           <br />

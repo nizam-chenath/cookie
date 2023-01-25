@@ -1,6 +1,6 @@
 .headerParentDiv {
-  padding: 10px;
-  background-color: whitesmoke;
+  padding: 10px 20px;
+  background-color: white;
   position: fixed;
   width: 100vw;
   z-index: 999;
@@ -20,14 +20,19 @@
 }
 
 .placeSearch {
-  width: 16em;
-  height: 48px;
+  width: 13em;
+  height: 40px;
   display: flex;
   align-items: center;
-  padding: 0 8px;
-  border: 2px solid #002f34;
-  border-radius: 4px;
-  background-color: white;
+ 
+  border: none;
+  border-radius: 8px;
+ 
+  box-shadow:  19px 19px 37px #c1c1c1,             -19px -19px 37px #ffffff;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 
 .placeSearch ::selection {
@@ -41,16 +46,21 @@
 }
 
 .productSearch {
-  width: 35em;
+  width: 25em;
   height: 48px;
-  border: 2px solid #002f34;
-  border-radius: 4px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
-  background-color: white;
-  display: flex;
-  align-items: center;
+  /*background-color: white;
+  */
+ 
   justify-content: space-between;
+  background: #e0e0e0;
+  box-shadow:  19px 19px 37px #cacaca,             -19px -19px 37px #ffffff;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 
 .productSearch .input {
@@ -72,8 +82,12 @@
   position: relative;
   display: flex;
   cursor: pointer;
-  background-color: #002f34;
-  border-radius: 0 4px 4px 0;
+  background-color: grey;
+  border-radius: 0 8px 8px 0;
+  -webkit-border-radius: 0 8px 8px 0;
+  -moz-border-radius: 0 8px 8px 0;
+  -ms-border-radius: 0 8px 8px 0;
+  -o-border-radius: 0 8px 8px 0;
 }
 
 .productSearch .searchAction svg {

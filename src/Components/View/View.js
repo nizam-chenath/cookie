@@ -24,6 +24,7 @@ function View() {
       <div className="imageShowDiv">
         <img
           src={postDetails.url}
+          style={{height: "300px",width: "300px"}}
           alt=""
         />
       </div>
@@ -37,8 +38,9 @@ function View() {
        { userDetails &&<div className="contactDetails">
           <p>Seller details</p>
           <p>{userDetails.username}</p>
-          <button className='call-btn'><Link className='call-link' to=''>Call and Purchase</Link></button>
-          <p>{userDetails.phone}</p>
+          <button className='call-btn'>  <a style={{ color: "white"}} href={"tel:+" + userDetails.phone}>call and deal</a></button>
+          {/* <a href={"tel:+" + userDetails.phone}>call and deal</a> */}
+          <p>Phone Number: {userDetails.phone}</p>
         </div>}
       </div>
     </div>

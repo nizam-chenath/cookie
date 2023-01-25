@@ -1,12 +1,15 @@
 .signupParentDiv {
-    border: 1px solid black;
+   
     width: max-content;
-    padding: 10px;
+    padding: 20px 40px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 6px;
+    border-radius: 28px;
+background: #e0e0e0;
+box-shadow:  19px 19px 37px #b1b1b1,
+             -19px -19px 37px #ffffff;
   }
   
   .signupParentDiv .input {
@@ -14,10 +17,16 @@
     border-left-color: transparent;
     border-right-color: transparent;
     outline-color: transparent;
-    width: 300px;
-    height: 30px;
+    width: 250px;
+    height: 35px;
     margin: 3px 0;
-  }
+   padding: 0 10px;
+    border: none;
+    border-radius: 28px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  19px 19px 37px #b1b1b1,
+                 -19px -19px 37px #ffffff;
+}
   .logo-heading{
     font-size: 50px;
     font-weight: bold;

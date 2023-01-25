@@ -28,14 +28,14 @@ function Header() {
         </div>
         <div className="placeSearch">
           <Search></Search>
-          <input type="text" />
+          <input type="text" placeholder='Serach location' />
           <Arrow></Arrow>
         </div>
         <div className="productSearch">
           <div className="input">
             <input
               type="text"
-              placeholder="Find car,mobile phone and more..."
+              placeholder="Find crafts that you like..."
             />
           </div>
           <div className="searchAction">

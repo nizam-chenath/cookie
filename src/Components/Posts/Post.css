@@ -1,7 +1,7 @@
 .moreView {
   margin: 16px 16px 24px;
   padding: 16px 16px 32px;
-  background: #dde1e7;
+  background: white;
   border-radius: 4px;
 }
 
@@ -37,26 +37,24 @@
 
 .card {
   margin-right: 15px;
-  padding: 13px;
+  padding: 10px;
   width: 222px;
   height: 270px;
   display: inline-block;
   cursor: pointer;
   width: 100%;
-  background: #dde1e7;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+  border: none;
+  border-radius: 18px;
+  background: #e0e0e0;
+  box-shadow:  20px 20px 60px #bebebe,
+               -20px -20px 60px #ffffff;
 }
 .card:hover{
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
   transition: 1.3s;
   -webkit-transition: 1.3s;
   -moz-transition: 1.3s;
@@ -87,6 +85,7 @@
   margin-top: 10px;
   font-size: larger;
   font-weight: bold;
+  color: green;
 }
 .card .content .kilometer {
   font-size: medium;

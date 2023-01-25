@@ -1,23 +1,33 @@
 .loginParentDiv {
-    border: 1px solid black;
+   
     width: max-content;
-    padding: 10px;
+    padding: 20px 60px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 6px;
+  
+    border-radius: 28px;
+background: #e4e4e4;
+box-shadow:  19px 19px 37px #b1b1b1,
+             -19px -19px 37px #ffffff;
   }
   
   .loginParentDiv .input {
-    border-top-color: transparent;
+    /* border-top-color: transparent;
     border-left-color: transparent;
     border-right-color: transparent;
-    outline-color: transparent;
-    width: 300px;
-    height: 30px;
+    outline-color: transparent; */
+    width: 250px;
+    height: 40px;
     margin: 10px 0;
-  }
+    border: none;
+    padding: 0 10px;
+    border-radius: 28px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  19px 19px 37px #b1b1b1,
+                 -19px -19px 37px #ffffff;
+}
   .logo-heading{
     font-size: 50px;
     font-weight: bold;
