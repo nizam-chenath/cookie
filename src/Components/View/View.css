@@ -48,3 +48,20 @@
   font-weight: 400;
   padding: 0;
 }
+.call-btn{
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background: green;
+}
+.call-link{
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}

@@ -18,7 +18,7 @@ function Login() {
     e.preventDefault()
     firebase.auth().signInWithEmailAndPassword(email,password).then(()=>{
     
-      history.push('/')
+      history.push('/Welcome')
     }).catch((err)=>{
       alert(err.message)
     })

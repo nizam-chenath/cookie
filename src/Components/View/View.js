@@ -2,6 +2,7 @@ import React from 'react';
 import {useEffect, useState, useContext } from 'react'
 import {PostContext} from '../../store/PostContext'
 import {FirebaseContext} from '../../store/FirebaseContext'
+import {Link} from 'react-router-dom'
 
 import './View.css';
 function View() {
@@ -36,6 +37,7 @@ function View() {
        { userDetails &&<div className="contactDetails">
           <p>Seller details</p>
           <p>{userDetails.username}</p>
+          <button className='call-btn'><Link className='call-link' to=''>Call and Purchase</Link></button>
           <p>{userDetails.phone}</p>
         </div>}
       </div>

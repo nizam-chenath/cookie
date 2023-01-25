@@ -11,6 +11,7 @@ import Post from './store/PostContext'
  */
 import Home from './Pages/Home';
 import { AuthContext, FirebaseContext } from './store/FirebaseContext';
+import Welcome from './Components/Welcome/Welcome';
 
 function App() {
   const { setUser} = useContext(AuthContext)
@@ -31,6 +32,7 @@ function App() {
       <Route path='/signup'><Signup/></Route>   
       <Route path='/login'><Login/></Route>   
       <Route path='/create'><Create/></Route>   
+      <Route path='/welcome'><Welcome/></Route>   
       <Route path='/view'><View/></Route>   
       </Router>
       </Post >
