@@ -23,8 +23,8 @@ function Header() {
     <div className="headerParentDiv">
       <div className="headerChildDiv">
         <div className="brandName">
-          {/* <OlxLogo></OlxLogo> */}
-          Cookie
+        
+          MyoPro
         </div>
         <div className="placeSearch">
           <Search></Search>

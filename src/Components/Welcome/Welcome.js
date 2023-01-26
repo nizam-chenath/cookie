@@ -12,18 +12,20 @@ const Welcome = () => {
   return (
     <div className='welcome-page'>
         <div className='content-side'>
-          <div className='content'>{user ? `Hey Welcome ... ${user.displayName}` : "Welcome"}</div>
+          <div className='logo'>MyoPro</div>
+          <div className='logo-content'>Make your own Profession</div>
+          <div className='content-welcome'>{user ? `Hey Welcome ... ${user.displayName}` : "Welcome"}</div>
         </div>
         <div className='btn-side'>
           <div>
 
-            <button onClick={()=>{
+            <button className='neomorph-button' onClick={()=>{
               history.push('/')
             }}>Lets Explore</button>
           </div>
           <div>
 
-            <button onClick={()=>{
+            <button className='neomorph-button' onClick={()=>{
               history.push('/create')
             }}>Sell your product</button>
           </div>

@@ -11,8 +11,8 @@ const Hero = () => {
     <div className='hero'>
       
         <div className='left-section'>
-          <div className="upper-btn" onClick={goToSell}>Sell</div>
-          <div className="lower-btn">See More</div>
+          <div className="neomorph-button1" onClick={goToSell}>Sell</div>
+          <div className="neomorph-button2">See More</div>
         </div>
         <div className='right-section'>
           <img className="hero-image" src={img}/>

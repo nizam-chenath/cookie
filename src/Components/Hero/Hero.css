@@ -21,7 +21,7 @@
     display: grid;
     place-content: center;
 }
-.upper-btn{
+/* .upper-btn{
     background-color: red;
     display: grid;
     place-content: center;
@@ -55,4 +55,53 @@
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 
+} */
+/* Define the button styles */
+.neomorph-button1 {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    background-color: rgb(179, 16, 16);
+    /* Add the neomorphism effect */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3),
+                inset 2px 2px 10px rgba(255, 255, 255, 0.3);
+    transform: rotate(2deg);
+  }
+  
+  /* Add hover effect */
+  .neomorph-button1:hover {
+    transform: rotate(4deg);
+  }
+  /* Define the button styles */
+.neomorph-button2 {
+    width: 200px;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    background-color: rgb(5, 21, 128);
+    /* Add the neomorphism effect */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3),
+                inset 2px 2px 10px rgba(255, 255, 255, 0.3);
+    transform: rotate(2deg);
+  }
+  
+  /* Add hover effect */
+  .neomorph-button2:hover {
+    transform: rotate(-4deg);
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    -ms-transform: rotate(-4deg);
+    -o-transform: rotate(-4deg);
 }
+  
+  

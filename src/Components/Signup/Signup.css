@@ -20,12 +20,15 @@ box-shadow:  19px 19px 37px #b1b1b1,
     width: 250px;
     height: 35px;
     margin: 3px 0;
-   padding: 0 10px;
+    padding: 0 10px;
     border: none;
-    border-radius: 28px;
+    border-radius: 10px;
     background: linear-gradient(145deg, #cacaca, #f0f0f0);
-    box-shadow:  19px 19px 37px #b1b1b1,
-                 -19px -19px 37px #ffffff;
+    box-shadow:  19px 19px 37px #b1b1b1,                 -19px -19px 37px #ffffff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
   .logo-heading{
     font-size: 50px;
