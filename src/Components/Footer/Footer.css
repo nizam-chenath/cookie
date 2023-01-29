@@ -18,10 +18,16 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background: #002f34;
+  background: #2e1dbcf7;
   color: whitesmoke;
 }
 
 .footerParentDiv .footer p {
   margin: 0;
+}
+
+@media(max-width: 576px){
+  .footerParentDiv .content{
+    display: grid;
+  }
 }

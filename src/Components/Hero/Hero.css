@@ -12,9 +12,10 @@
     place-content: center;
 }
 .hero-image{
-    margin-top: 10px;
+    margin-top: 30px;
     width: 500px;
     height: 380px;
+    padding-top: 20px;
 }
 .right-section{
     width: 100%;
@@ -102,6 +103,23 @@
     -moz-transform: rotate(-4deg);
     -ms-transform: rotate(-4deg);
     -o-transform: rotate(-4deg);
+}
+@media (max-width: 768px){
+    .hero{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.7fr;
+    
+    }
+    .hero-image{
+        width: 300px;
+        height: 300px;
+       
+    }
+    .left-section{
+      display: grid;
+      align-content: end;
+      justify-content: center;
+    }
 }
   
   

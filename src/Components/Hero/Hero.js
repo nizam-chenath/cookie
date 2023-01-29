@@ -12,7 +12,7 @@ const Hero = () => {
       
         <div className='left-section'>
           <div className="neomorph-button1" onClick={goToSell}>Sell</div>
-          <div className="neomorph-button2">See More</div>
+          <div className="neomorph-button2" onClick={()=> navigate.push('/list')}>Your Items</div>
         </div>
         <div className='right-section'>
           <img className="hero-image" src={img}/>

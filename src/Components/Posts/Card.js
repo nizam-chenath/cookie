@@ -12,9 +12,9 @@ const Card = ({name,url,category,price,date,setPostDetails,product}) => {
         history.push('/view')
     }}
   >
-    <div className="favorite">
+    {/* <div className="favorite">
       <Heart></Heart>
-    </div>
+    </div> */}
     <div className="image">
       <img src={url} alt="" />
     </div>

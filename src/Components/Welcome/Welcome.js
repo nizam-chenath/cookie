@@ -27,7 +27,7 @@ const Welcome = () => {
 
             <button className='neomorph-button' onClick={()=>{
               history.push('/create')
-            }}>Sell your product</button>
+            }}>Sell your crafts </button>
           </div>
         </div>
     </div>

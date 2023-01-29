@@ -75,3 +75,32 @@ box-shadow:  20px 20px 60px #bebebe,
   color: white;
   text-decoration: none;
 }
+
+@media(max-width: 678px){
+  .viewParentDiv{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .viewParentDiv .rightSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 10px;
+  }
+  .viewParentDiv .imageShowDiv{
+    width: 100%;
+  }
+}
+
+@media(max-width: 496px){
+  .viewParentDiv .rightSection{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media(max-width: 364px){
+  .viewParentDiv .imageShowDiv img {
+    width: 65vw;
+    height: 50vh;
+  }
+}

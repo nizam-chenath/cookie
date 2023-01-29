@@ -1,0 +1,44 @@
+.list-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.items-page{
+    padding: 70px 100px;
+}
+.button-delete{
+    width: 70px;
+    height: 20px;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 10px;
+}
+.card{
+    position: relative;
+}
+
+@media (max-width:678px) {
+    .items-page{
+        padding: 30px 20px;
+    }
+}
+@media(max-width: 578px){
+    .items-page{
+        padding: 20px 20px;
+
+    }
+    .list-card{
+        grid-template-columns: 1fr;
+    }
+}

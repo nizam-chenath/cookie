@@ -8,14 +8,14 @@ function Footer() {
       <div className="content">
         <div>
           <div className="heading">
-            <p>POPULAR LOCATIONS</p>
+            <p>POPULAR Deals</p>
           </div>
           <div className="list">
             <ul>
-              <li>kolkata</li>
-              <li>Mumbai</li>
-              <li>Chennai</li>
-              <li>Pune</li>
+              <li>Crafts</li>
+              <li>Foods</li>
+              <li>Paintings</li>
+              <li>Art</li>
             </ul>
           </div>
         </div>
@@ -25,16 +25,16 @@ function Footer() {
           </div>
           <div className="list">
             <ul>
-              <li>About OLX Group</li>
+              <li>About MyoPro Group</li>
               <li>Careers</li>
               <li>Contact Us</li>
-              <li>OLXPeople</li>
+              <li>MyoPro People</li>
             </ul>
           </div>
         </div>
         <div>
           <div className="heading">
-            <p>OLX</p>
+            <p>MyoPro</p>
           </div>
           <div className="list">
             <ul>
@@ -46,8 +46,8 @@ function Footer() {
         </div>
       </div>
       <div className="footer">
-        <p>Other Countries Pakistan - South Africa - Indonesia</p>
-        <p>Free Classifieds in India. © 2006-2021 OLX</p>
+        <p>Other Countries Pakistan - india - Indonesia</p>
+        <p>Free Classifieds in India. © 2021-2023 MyoPro </p>
       </div>
     </div>
   );
