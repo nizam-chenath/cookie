@@ -60,3 +60,8 @@
     transform: rotate(4deg);
   }
   
+  @media(max-width: 496px){
+    .welcome-page{
+        grid-template-columns: 1fr;
+    }
+  }

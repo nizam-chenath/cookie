@@ -42,16 +42,16 @@ function Header() {
             <Search color="#ffffff"></Search>
           </div>
         </div>
-        <div className="language">
+        {/* <div className="language">
           <select>
             <option>English</option>
             <option>Spanish</option>
             <option>Italic</option>
             <option>Chinese</option>
-          </select>
+          </select> */}
           {/* <span> ENGLISH </span> */}
           {/* <Arrow></Arrow> */}
-        </div>
+        {/* </div> */}
         <div className="loginPage">
           <span>{user ? `Hey..welcome ${user.displayName}` : <span onClick={()=>{ history.push("login")}}>Login</span>}</span>
           <hr />
