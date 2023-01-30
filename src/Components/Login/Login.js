@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import Logo from '../../olx-logo.png';
+
 import './Login.css';
 import {useContext} from 'react'
 import {FirebaseContext} from '../../store/FirebaseContext'
