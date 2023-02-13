@@ -28,7 +28,25 @@ box-shadow:  19px 19px 37px #b1b1b1,
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-  
+.loading {
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  flex-direction: column;
+}
+
+.loading p {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
   .uploadBtn {
     margin-top: 30px;
     width: 100%;
@@ -43,4 +61,43 @@ box-shadow:  19px 19px 37px #b1b1b1,
     color: #002f34;
     border: 2px solid #002f34;
   }
+  .popup{
+    height: 100vh;
+    width: 100vw;
+    color: black;
+    display: grid;
+    place-content: center;
+    position: absolute;
   
+  }
+  .home-btn{
+    width: 200px;
+   
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    background-color: #333;
+    /* Add the neomorphism effect */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3),
+                inset 2px 2px 10px rgba(255, 255, 255, 0.3);
+    transform: rotate(2deg);
+  }
+  .home-btn:hover{
+    transform: rotate(4deg);
+  }
+
+  @media (max-width: 430px) {
+    .centerDiv{
+      width: 90vw;
+      margin: 0;
+      display: grid;
+      place-content: center;
+  
+      
+    }
+  }

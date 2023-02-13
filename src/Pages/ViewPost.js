@@ -8,6 +8,7 @@ function ViewPost(props) {
         <div>
             <Header />
             <View/>
+            
         </div>
     )
 }

@@ -61,3 +61,10 @@ box-shadow:  19px 19px 37px #b1b1b1,
     cursor: pointer;
   }
   
+  @media(max-width: 400px){
+    .signupParentDiv{
+      width: 90%;
+      margin: 0;
+      padding: 30px;
+    }
+  }

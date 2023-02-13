@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useState} from 'react';
 import { useHistory } from 'react-router';
 
 import './Header.css';
@@ -13,6 +13,7 @@ function Header() {
   const {user} = useContext(AuthContext)
   const {firebase} = useContext(FirebaseContext)
   const history = useHistory()
+  const [ searchItem, setSearchItem] = useState("")
 
 
   const goToSell = () =>{
@@ -36,6 +37,7 @@ function Header() {
             <input
               type="text"
               placeholder="Find crafts that you like..."
+              onChange={(e) => setSearchItem(e.target.value)}
             />
           </div>
           <div className="searchAction">

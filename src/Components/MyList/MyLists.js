@@ -4,11 +4,13 @@ import { AuthContext, FirebaseContext } from './../../store/FirebaseContext';
 import Card from '../Posts/Card';
 import './MYList.css'
 import Cards from './Cards';
+import { useHistory } from 'react-router-dom';
 
 const MyLists = () => {
   const {firebase} = useContext(FirebaseContext)
   const [products, setProducts] = useState([])
   const {user} = useContext(AuthContext)
+  const history = useHistory()
 
   
   useEffect(()=>{
@@ -29,6 +31,9 @@ const filteredProducts = products.filter((product) =>{
 console.log(filteredProducts)
 // console.log(user.uid)
   return (
+    
+   
+
     <div className='items-page'>
 
       <p className='noofitems'>No of Items posted: {filteredProducts.length}</p>
@@ -44,6 +49,8 @@ console.log(filteredProducts)
         })}
     </div>
     </div>
+  
+    
   )
 }
 

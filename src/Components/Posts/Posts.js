@@ -10,6 +10,7 @@ function Posts() {
   
   const {firebase} = useContext(FirebaseContext)
   const [products, setProducts] = useState([])
+  const [searchItem, setSearchItem] = useState("")
   const {setPostDetails} = useContext(PostContext)  
 
   useEffect(()=>{
@@ -29,10 +30,10 @@ function Posts() {
       <div className="moreView">
         <div className="heading">
           <span style={{margin: "20px 0"}}>Quick Menu</span>
-          <span>View more</span>
+          <input type="text" placeholder='Search category' className='searchField' onChange={(e) => setSearchItem(e.target.value)}></input>
         </div>
         <div className="cards">
-          {products.map((product) =>{
+          {products.filter((e)=> e.category.toLowerCase().includes(searchItem)).map((product) =>{
             return <Card setPostDetails={setPostDetails} product={product} url={product.url} price={product.price} category={product.category} name={product.name} date={product.createdAt}/>
           })}
          

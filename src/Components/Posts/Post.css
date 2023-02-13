@@ -20,6 +20,12 @@
   font-size: 14px;
   color: #002f34;
 }
+.searchField{
+  box-shadow: 1px 2px 3px grey;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
 
 .recommendations .cards {
   display: flex;

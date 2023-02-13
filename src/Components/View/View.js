@@ -38,7 +38,7 @@ function View() {
        { userDetails &&<div className="contactDetails">
           <p>Seller details</p>
           <p>{userDetails.username}</p>
-          <button className='call-btn'>  <a style={{ color: "white"}} href={"tel:+" + userDetails.phone}>call and deal</a></button>
+          <button className='call-btn'>  <a style={{ color: "white"}} href={"tel:+91" + userDetails.phone}>call and deal</a></button>
           {/* <a href={"tel:+" + userDetails.phone}>call and deal</a> */}
           <p>Phone Number: {userDetails.phone}</p>
         </div>}

@@ -3,6 +3,8 @@ import './Create.css';
 import Header from '../Header/Header';
 import { AuthContext, FirebaseContext } from '../../store/FirebaseContext';
 import { useHistory } from 'react-router';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 
 const Create = () => {
  
@@ -12,13 +14,14 @@ const Create = () => {
   const history = useHistory()
 
   const [name, setName] = useState("")
+  const [loading, setLoading] = useState(false)
   const [category, setCategory] = useState("")
   const [price, setPrice] = useState("")
   const [image, setImage] = useState(null)
    
   const date = new Date()
   const handleSubmit = () =>{
-         
+         setLoading(true)
          firebase.storage().ref(`/image/${image.name}`).put(image).then(({ref}) =>{
            ref.getDownloadURL().then((url) =>{
              console.log(url)
@@ -30,16 +33,28 @@ const Create = () => {
                userId:user.uid,
                createdAt:date.toDateString()
              })
+             setLoading(false)
              history.push('/')
            })
          }).catch((err) =>{
            console.log(err)
          })
+         
+        
   }
 
   return (
     <Fragment>
       <Header />
+      {
+        loading?
+          <div className='loading'>
+              <FontAwesomeIcon icon={faSpinner} spin />
+             
+            <p>just a second, we are uploading ...</p>
+          </div>
+        :
+         user ?
       <card>
         <div className="centerDiv">
       
@@ -84,6 +99,13 @@ const Create = () => {
        
         </div>
       </card>
+      :
+      <div className='popup'>
+
+      <h1>Please Login First for Publish your item</h1>
+      <button className='home-btn' onClick={()=> history.push('/')}>Back to Home</button>
+     </div>
+      }
     </Fragment>
   );
 };

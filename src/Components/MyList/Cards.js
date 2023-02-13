@@ -1,22 +1,37 @@
-import React, {useContext}from 'react'
+import React, {useContext, useState}from 'react'
 
 import { useHistory } from 'react-router';
 import { firebase } from 'firebase';
 import { FirebaseContext } from './../../store/FirebaseContext';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 
 const Cards = ({name,url,category,price,date,product}) => {
 
     const history = useHistory()
+  const [loading, setLoading] = useState(false)
 
     const {firebase} = useContext(FirebaseContext)
+
+
     const deleteItem = () =>{
+      setLoading(true)
         firebase.firestore().collection('products').doc(product.id).delete().then(()=>{
             console.log('DELETED SUCCESSFULLY')
+            setLoading(false)
+            window.location.reload()
         }).catch((err)=>{
             console.log(err)
         })
     }
   return (
+    loading ? 
+    <div className='loading'>
+    <FontAwesomeIcon icon={faSpinner} spin />
+   
+  <p>just a second, we are deleting {name} ...</p>
+</div>
+:
     <div
     className="card"
    
